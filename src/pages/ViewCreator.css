@@ -1,0 +1,81 @@
+:root {
+  --radius: 10px;
+  --spacing: 16px;
+  --spacing-half: 8px;
+  --primary: #0288d1; /* Primary color */
+  --primary-dark: #01579b; /* Darker shade of primary color for hover effects */
+  --success: #4caf50; /* Green for success actions like Edit */
+  --success-dark: #45a049; /* Darker green for hover effects */
+  --error: #f44336; /* Red for error actions like Delete */
+  --error-dark: #e53935; /* Darker red for hover effects */
+  --background-light: lightcyan; /* Light background color */
+}
+
+.container {
+  padding: var(--spacing);
+}
+
+.grid {
+  background-color: var(--background-light);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing);
+  align-items: center;
+  height: 400px;
+}
+
+.creator-card-image {
+  width: 80%;
+  border-radius: var(--radius);
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  margin-bottom: var(--spacing-half);
+}
+
+p {
+  margin-bottom: var(--spacing);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button-group {
+  margin-top: var(--spacing);
+}
+
+.edit-button,
+.delete-button {
+  padding: var(--spacing-half) var(--spacing);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: var(--spacing-half);
+  transition: background-color 0.3s ease;
+  width: auto;
+  display: inline-block;
+}
+
+.edit-button {
+  background-color: var(--success); /* Green for Edit */
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: var(--success-dark); /* Darker green for hover */
+}
+
+.delete-button {
+  background-color: var(--error); /* Red for Delete */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: var(--error-dark); /* Darker red for hover */
+}

@@ -1,0 +1,86 @@
+/* Landing Page Image */
+.landing-page {
+  position: relative; /* This makes the container the reference point for absolutely positioned elements */
+  width: 100%;
+  height: 50vh;
+  background-color: #e0f7fa; /* Light Blue Background */
+  margin-bottom: 20px; /* Add some space below the landing image */
+}
+
+.landing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.add-creator-button {
+  position: absolute; /* Positioning the button absolutely within the landing-page container */
+  top: 50%; /* Vertically center the button */
+  left: 50%; /* Horizontally center the button */
+  transform: translate(-50%, -50%); /* Adjust the button's position to be exactly centered */
+  padding: 10px 20px;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width:fit-content
+}
+
+.add-creator-button:hover {
+  background-color: #01579b; /* Darker blue on hover */
+}
+
+/* Creators Grid */
+.creators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #04c6e0; /* Light Blue Background */
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #0288d1;
+  color: rgb(69, 74, 123);
+  margin: 15px;
+  border-radius: 10px;
+  box-sizing: content-box;
+  text-align: center;
+  height: 400px; /* Fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-image {
+  width: 100%;
+  max-height: 85%; /* Set a maximum height for the images */
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+

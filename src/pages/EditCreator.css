@@ -1,0 +1,89 @@
+/* EditCreator.css */
+
+/* Custom color variables */
+:root {
+    --primary: #0288d1; /* Primary color */
+    --primary-dark: #01579b; /* Darker primary color */
+    --success: #4caf50; /* Green for success */
+    --success-dark: #45a049; /* Darker green for hover */
+    --error: #f44336; /* Red for error */
+    --error-dark: #e53935; /* Darker red for hover */
+    --background: #f5f5f5; /* Light background color */
+  }
+  
+  .edit-creator-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--spacing);
+    background-color: var(--background);
+    border-radius: var(--radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-creator-form {
+    display: grid;
+    gap: var(--spacing);
+  }
+  
+  .edit-creator-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing);
+  }
+  
+  .edit-creator-form input,
+  .edit-creator-form textarea {
+    padding: var(--spacing-half);
+    border-radius: var(--radius);
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .edit-creator-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .save-button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: var(--spacing-half) var(--spacing);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: var(--primary-dark); /* Darker shade for hover */
+  }
+  
+  /* Add PicoCSS styles */
+  .pico-button {
+    padding: var(--spacing-half) var(--spacing);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pico-button--success {
+    background-color: var(--success);
+    color: white;
+  }
+  
+  .pico-button--success:hover {
+    background-color: var(--success-dark); 
+  }
+
+  .pico-button--error {
+    background-color: var(--error);
+    color: white;
+  }
+  
+  .pico-button--error:hover {
+    background-color: var(--error-dark); /* Darker red for hover */
+  }
+

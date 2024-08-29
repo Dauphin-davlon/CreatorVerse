@@ -1,0 +1,67 @@
+/* AddCreator.css */
+
+.add-creator-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--card-background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .add-creator-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .add-creator-form h2 {
+    text-align: center;
+  }
+  
+  .add-creator-form label {
+    font-weight: bold;
+  }
+  
+  .add-creator-form input[type="text"],
+  .add-creator-form input[type="url"],
+  .add-creator-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--muted);
+    border-radius: var(--border-radius);
+  }
+  
+  .add-creator-form button[type="submit"] {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .add-creator-form button[type="submit"]:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  .add-creator-form button[type="button"] {
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .add-creator-form button[type="button"]:hover {
+    background-color: var(--secondary-hover);
+  }
+  
+  .add-creator-form .error {
+    color: var(--error);
+    text-align: center;
+  }
+  
